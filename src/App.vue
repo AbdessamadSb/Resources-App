@@ -1,9 +1,12 @@
 <template>
-  <ul></ul>
+  <div>
+    <ul>
+      <ResourcesItem />
+    </ul>
+  </div>
 </template>
 <script>
 import ResourcesItem from "./components/learning-resources/ResourcesItem.vue";
-
 export default {
   components: {
     ResourcesItem,
