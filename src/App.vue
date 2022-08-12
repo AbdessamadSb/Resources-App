@@ -1,34 +1,23 @@
 <template>
-  <div>
-    <ul>
-      <ResourcesItem />
-    </ul>
+  <TheHeader title="RememberMe" />
+  <div class="container mx-auto">
+    <TheResources />
   </div>
 </template>
 <script>
-import ResourcesItem from "./components/learning-resources/ResourcesItem.vue";
+import TheHeader from "./components/layouts/TheHeader.vue";
+import TheResources from "./components/learning-resources/TheResources.vue";
 export default {
   components: {
-    ResourcesItem,
+    TheHeader,
+    TheResources,
   },
-  data() {
-    return {
-      storedResources: [
-        {
-          id: "official-guide",
-          title: "Official Guide",
-          description: "The Official Vue js documentation.",
-          link: "https://vuejs.org/",
-        },
-        {
-          id: "google",
-          title: "Google",
-          description: "Learn how to google stuff",
-          link: "https://google.com/",
-        },
-      ],
-    };
-  },
-  components: { ResourcesItem },
 };
 </script>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+</style>
